@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #FB8873;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  height: 900px;
+  width: 900px;
+  border-radius: 20px;
+}
+
+.container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 900px;
+  width: 40%;
+  padding-top: 30px;
+  background-color: #35454D;
+  border-radius: 20px 0 0 20px;
+}
+
+.container .menu input {
+  background-color: rgba(185, 190, 193, 0.3);
+  line-height: 40px;
+  padding: 0 40px;
+  width: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.container .menu input::-webkit-input-placeholder {
+  color: #B9BEC1;
+}
+
+.container .menu input:-ms-input-placeholder {
+  color: #B9BEC1;
+}
+
+.container .menu input::-ms-input-placeholder {
+  color: #B9BEC1;
+}
+
+.container .menu input::placeholder {
+  color: #B9BEC1;
+}
+
+.container .menu .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  padding: 20px 20px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #B9BEC1;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .menu .title i {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .menu .title:hover, .container .menu .title.active {
+  background-color: #fff;
+  cursor: pointer;
+  color: #35454D;
+}
+
+.container .menu .title:hover i, .container .menu .title.active i {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  color: #35454D;
+}
+
+.container .content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  height: 900px;
+  padding: 20px 0;
+}
+
+.container .content-list .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+  background-color: #ECF3F3;
+}
+
+.container .content-list .content.active {
+  background-color: #fff;
+}
+
+.container .content-list .content h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.container .content-list .content:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #35454D;
+}
+
+.container .content-list .content-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 38px;
+  color: #35454D;
+}
+
+.container .content-list .content-wrapper li {
+  padding-bottom: 5px;
+}
+
+.container .content-list .content-wrapper li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

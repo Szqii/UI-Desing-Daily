@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 180px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+  background-color: #ffffff;
+  height: 865px;
+}
+
+.container .description {
+  background-color: #BA91E9;
+  border-radius: 5px;
+  width: 465px;
+  height: 785px;
+  margin-right: 30px;
+}
+
+.container .description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 65px 65px 159px 65px;
+}
+
+.container .description ul li {
+  padding-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .description ul li:last-child {
+  padding-bottom: 0;
+}
+
+.container .description ul li .dsc-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 241px;
+  height: 125px;
+  background-color: transparent;
+}
+
+.container .description ul li .dsc-text h6 {
+  padding: 17px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.container .description ul li .dsc-text p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.container .sign-up {
+  background-color: #ffffff;
+  width: 465px;
+  height: 785px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+}
+
+.container .sign-up h5 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #151E42;
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+
+.container .sign-up ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .sign-up ul li {
+  padding-bottom: 35px;
+}
+
+.container .sign-up ul li p {
+  font-size: 16px;
+  color: #151E42;
+  font-weight: 800;
+}
+
+.container .sign-up ul li p.check-text {
+  color: #151E42;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  -webkit-transform: translate(10px, -45px);
+          transform: translate(10px, -45px);
+  padding-bottom: 45px;
+}
+
+.container .sign-up ul li a.terms-cons {
+  color: #6E59CE;
+}
+
+.container .sign-up ul li input {
+  width: 415px;
+  height: 60px;
+  margin-top: 10px;
+  border: 2px solid rgba(228, 232, 238, 0.6);
+  padding-left: 20px;
+  border-radius: 10px;
+  color: #151E42;
+}
+
+.container .sign-up ul li input.checkbox {
+  position: relative;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  width: 20px;
+}
+
+.container .sign-up ul li button {
+  background-color: #6E59CE;
+  font-size: 16px;
+  color: #FFFFFF;
+  width: 415px;
+  height: 60px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  border-radius: 5px;
+}
+
+.container .sign-up ul li button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(186, 145, 233, 0.7);
+          box-shadow: 0 12px 16px 0 rgba(186, 145, 233, 0.7);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  padding: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e0e0e0;
+}
+
+.component--cdn-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.component--cdn-list ul li {
+  border: 2px solid #202842;
+  border-radius: 20px;
+  width: 430px;
+  height: 850px;
+  margin-left: 20px;
+  background-color: #FFF;
+}
+
+.component--cdn-list ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px;
+  margin-top: 40px;
+}
+
+.component--cdn-list ul li a .title {
+  font-size: 30px;
+  text-align: left;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #202842;
+}
+
+.component--cdn-list ul li a .description {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 70px;
+  color: #202842;
+}
+
+.component--cdn-list ul li a .cost {
+  font-size: 60px;
+  text-align: left;
+  font-weight: 900;
+  margin-bottom: 100px;
+  color: #202842;
+}
+
+.component--cdn-list ul li a .features-wrapper .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-left: 50px;
+  color: #182745;
+  font-size: 18px;
+}
+
+.component--cdn-list ul li a .btn-sub {
+  padding: 20px 100px;
+  background-color: #202842;
+  border: #202842;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.component--cdn-list ul li:hover {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  background-color: #202842;
+}
+
+.component--cdn-list ul li:hover .title {
+  color: #FFF;
+}
+
+.component--cdn-list ul li:hover .description {
+  color: #FFF;
+}
+
+.component--cdn-list ul li:hover .cost {
+  color: #FFF;
+}
+
+.component--cdn-list ul li:hover .features-wrapper .features {
+  color: #fff;
+}
+
+.component--cdn-list ul li:hover .btn-sub {
+  background-color: #FFF;
+  color: #202842;
+}
+/*# sourceMappingURL=main.css.map */

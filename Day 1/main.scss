@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    &:focus{
+        outline: 0;
+    }
+}
+
+body{
+    padding: 50px;
+    align-items: center;
+    background-color: #e0e0e0;
+}
+
+.component{
+    &--cdn-list{
+        ul{
+            display: flex;
+            li{
+
+                border: 2px solid #202842;
+                border-radius: 20px;
+                width: 430px;
+                height: 850px;
+                margin-left: 20px;
+                background-color: #FFF;
+                a {
+                    display: flex;
+                    flex-direction: column;            
+                    padding: 60px;
+                    margin-top: 40px;
+
+
+                    .title{
+                        font-size: 30px;
+                        text-align: left;
+                        font-weight: bolder;
+                        margin-bottom: 10px;
+                        color: #202842;                                       
+                    }
+                    .description{
+                        font-size: 18px;
+                        text-align: left;
+                        font-weight: 500;
+                        margin-bottom: 70px;
+                        color: #202842;
+                    }
+                    .cost{
+                        font-size: 60px;
+                        text-align: left;
+                        font-weight: 900;
+                        margin-bottom: 100px;
+                        color: #202842;
+                    }
+                    .features-wrapper{
+                        .features{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: left;
+                            margin-left: 50px;
+                            color: #182745;
+                            font-size: 18px;
+                        }                       
+                    }
+                    .btn-sub{
+                        padding: 20px 100px;
+                        background-color: #202842;
+                        border: #202842;
+                        border-radius: 15px;
+                        text-align: center;
+                        font-size: 18px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #FFF;
+                        margin-top: 20px;
+                        cursor: pointer;
+                    } 
+                }
+                &:hover{
+                    transition: 500ms;
+                    background-color: #202842;
+                    .title{
+                        color: #FFF;
+                    }
+                    .description{
+                        color: #FFF;
+                    }
+                    .cost{
+                        color: #FFF;
+                    }
+                    .features-wrapper{
+                        .features{
+                            color: #fff;
+                        }
+                    }
+                    .btn-sub{
+                        background-color: #FFF;
+                        color: #202842;
+                    }
+                }              
+            }
+
+        }
+    }    
+}
