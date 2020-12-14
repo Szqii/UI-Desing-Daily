@@ -1,0 +1,231 @@
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+
+    &:focus{
+        outline: 0;
+    }
+}
+
+body {
+    background-image: url(./assets/background.svg);
+    background-size: 100%;
+    height: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+
+    .contanier{
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        width: 1300px;
+        height: 1050px;
+        background-color: rgba($color: #fff, $alpha: .7);
+        border-radius: 10px;
+        
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 140px;
+            padding: 55px;
+            margin-bottom: 70px;
+            img{
+                color: #2B2862;
+                transition: 300ms all;
+                &:hover{
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+            .actions{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    li{
+                        padding-left: 25px;
+                        a{
+                            color: #2B2862;
+                            font-size: 18px;
+                            font-weight: 600;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            padding-bottom: 10px;
+                            
+                            &::before, &::after{
+                                display:block;
+                                content: '';
+                                border-bottom: solid 2px #2B2862;  
+                                transform: scaleX(0);  
+                                transition: transform 200ms ease-in-out;
+                            }
+
+                            &::after{
+                                transform-origin: 0% 50%;
+                            }
+                            &::before{
+                                position:absolute;
+                                bottom:1.2em; left:0;
+                                width:100%;
+                            }
+
+                            &:hover::after{
+                                transition-delay: 250ms;
+                            }
+                            &:hover::before, &:hover::after{
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                }
+
+                        button{
+                            background-color: #2B2862;
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 800;
+                            padding: 20px 40px;
+                            border-radius: 10px;
+                            box-shadow:0 5px 10px #2B2862;
+                            transition: 300ms all;
+
+                            &:hover{
+                                transform: scale(1.2);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            padding: 0 120px;
+            width: 100%;
+            
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 670px;
+                height: 380px;
+                padding-left: 20px;
+                margin-bottom: 50px;
+            
+            h4{
+                color: #2B2862;
+                font-size: 60px;
+                font-weight: bold;
+                width: 670px;
+                height: 280px;
+            }
+        }  
+            .desc{  
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 500px;
+                height: 65px;
+                
+                p{
+                    color: #2B2862;
+                    font-size: 16px;
+                    font-weight: bold;
+                    width: 450px;
+                    height: 280px;
+            }
+        }
+    }
+        .features-group{
+            width: 100%;
+            height: 400px;
+            
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li{
+                    padding-right: 20px;
+                    
+                    .features{
+                    
+                        background-color: #fff;
+                        width: 335px;
+                        height: 220px;
+                    }
+                }
+            }
+
+            .features{
+                display: flex;
+                flex-direction: column;
+                padding: 40px 60px;
+                label{
+                    display: block;
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-align: left;
+                    margin-bottom: 40px;
+                }
+                select{
+                    width: 80%;
+                    color: #606DFE;
+                    font-size: 18px;
+                    font-weight: 700;
+                    align-items: center;
+                    justify-content: left;
+                    padding: 20px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    
+                    option{
+                        cursor: pointer;
+                    }
+                }
+                h6{
+                    font-size: 24px;
+                    font-weight: 700;
+                    align-items: center;
+                    justify-content: left;
+                    padding-bottom: 30px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                button{
+                    align-items: center;
+                    justify-content: center;
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 25px;
+                    border: 2px solid #D4D7FF;
+                    background-color: #fff;
+                    color: #606DFE;
+                    transition: 300ms all;
+
+                    &:hover{
+                        background-color: #606DFE;
+                        color: #fff;
+                        border-color: #606DFE;
+                        cursor: pointer;
+                    }
+                }
+            }
+    }

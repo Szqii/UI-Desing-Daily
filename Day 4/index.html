@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/160edd8076.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <div class="menu">
 
                 <input type="text" class="search-bar" placeholder="Search">
@@ -35,44 +35,73 @@
             </div>
         
         <div class="content-list">
-            <div class="content active">
+            <div class="content active" @click="change">
                 <h5>GROCERIES</h5>
                 <i class="fas fa-ellipsis-v"></i> 
             </div>
 
-        <div class="content-wrapper">
+        <div class="content-wrapper" v-if="wrapperState">
             <ul>
                 <li>
                     <p>Butter</p>
                 </li>
             <li>
-                  <p>Orange Juice</p>
+                    <p>Orange Juice</p>
               </li>
               <li>
                     <p>Cheese</p>
              </li>
              <li>
-                 <p>Chocolate</p>
+                    <p>Chocolate</p>
              </li>
              <li>
-                 <p>Butter</p>
+                    <p>Butter</p>
              </li>
              <li>
-                 <p>Corn Flakes</p>
+                    <p>Corn Flakes</p>
              </li>
              <li>
-                 <p>Potatoes</p>
+                    <p>Potatoes</p>
              </li>
              <li>
-                 <p>Apples</p>
+                    <p>Apples</p>
              </li>
          </ul>
      </div>
                    
-            <div class="content">
+            <div class="content" @click="change">
                 <h5>ELECTRONICS</h5>
                 <i class="fas fa-ellipsis-v"></i>
              </div>
+
+             <div class="content-wrapper" v-if="!wrapperState">
+                <ul>
+                    <li>
+                        <p>Butter</p>
+                    </li>
+                <li>
+                      <p>Orange Juice</p>
+                  </li>
+                  <li>
+                        <p>Cheese</p>
+                 </li>
+                 <li>
+                     <p>Chocolate</p>
+                 </li>
+                 <li>
+                     <p>Butter</p>
+                 </li>
+                 <li>
+                     <p>Corn Flakes</p>
+                 </li>
+                 <li>
+                     <p>Potatoes</p>
+                 </li>
+                 <li>
+                     <p>Apples</p>
+                 </li>
+             </ul>
+         </div>
 
              <div class="content">
                 <h5>BOOKS</h5>
@@ -85,6 +114,11 @@
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="app.js"></script>    
 </body>
 </html>
